@@ -1,13 +1,22 @@
 @charset "UTF-8";
+
 /*----------------------------------------
 1. TIPOGRAFIA DEL SITIO
 -----------------------------------------*/
 html {
-  font-size: 13px; }
+  font-size: 13px;
+  background-color: #35363c;
+}
+
+#principal {
+  opacity: 0;
+  transition: 1s opacity;
+}
 
 body {
   font-family: 'Lato', sans-serif;
-  color: #696969; }
+  color: #696969;
+}
 
 /*-----------------------------------------
 2. ESTILOS GENERALES DE BOTONES
@@ -15,16 +24,19 @@ body {
 .btn {
   border-radius: 2rem;
   padding: .6rem 2rem;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /*-----------------------------------------
 3. ESTILOS COLOR PRINCIPAL
 ------------------------------------------*/
 .bg-primary {
-  background-color: #00ad75 !important; }
+  background-color: #00ad75 !important;
+}
 
 .text-primary {
-  color: #00ad75 !important; }
+  color: #00ad75 !important;
+}
 
 /*Estilos btn-primary*/
 .btn-primary {
@@ -35,22 +47,26 @@ body {
   overflow: hidden;
   z-index: 1;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+}
 
 .btn-primary:hover {
   color: #35363c;
   background-color: #fff;
-  border-color: #00ad75; }
+  border-color: #00ad75;
+}
 
 .btn-primary:active {
   color: #35363c !important;
   background-color: #00c786 !important;
-  border-color: #00e097 !important; }
+  border-color: #00e097 !important;
+}
 
 .btn-primary:focus {
   color: #35363c !important;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important;
-          box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important; }
+  box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important;
+}
 
 /*Insertamos la fecha del boton principal*/
 .btn-primary:after {
@@ -61,12 +77,14 @@ body {
   left: .6rem;
   top: .1rem;
   -webkit-transition: left .3s ease;
-  transition: left .3s ease; }
+  transition: left .3s ease;
+}
 
 .btn-primary:hover:after,
 .btn-primary:focus:after,
 .btn-primary:active:after {
-  left: .25rem; }
+  left: .25rem;
+}
 
 /*Insertamos la caja blanca del boton principal*/
 .btn-primary:before {
@@ -79,24 +97,28 @@ body {
   left: 50%;
   top: 0;
   -webkit-transform: skew(45deg, 0);
-          transform: skew(45deg, 0);
+  transform: skew(45deg, 0);
   -webkit-transition: all .4s ease;
-  transition: all .4s ease; }
+  transition: all .4s ease;
+}
 
 .btn-primary:hover:before,
 .btn-primary:focus:before,
 .btn-primary:active:before {
   width: 130%;
-  left: -15%; }
+  left: -15%;
+}
 
 /*-----------------------------------------
 4. ESTILOS COLOR SECUNDARIO
 ------------------------------------------*/
 .bg-secondary {
-  background-color: #35363c !important; }
+  background-color: #35363c !important;
+}
 
 .text-secondary {
-  color: #35363c !important; }
+  color: #35363c !important;
+}
 
 /*-----------------------------------------
 5. ESTILOS PARA ".redes-sociales"
@@ -107,25 +129,90 @@ body {
   padding: .6rem 1rem;
   opacity: .8;
   -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out; }
+  transition: all .3s ease-in-out;
+}
 
 .redes-sociales li a i:hover {
   opacity: 1;
   -webkit-transform: scale(1.3) rotate(360deg);
-          transform: scale(1.3) rotate(360deg); }
+  transform: scale(1.3) rotate(360deg);
+}
+
+#barra-contacto {
+  position: fixed;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  height: 10%;
+  z-index: 0;
+}
+
+#barra-contacto_bienvenido {
+  position: relative;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  height: 10%;
+}
+
+.comment_servicios{
+  margin: 2rem 0.25rem;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.comment{
+  padding: 1.5rem 2rem;
+  text-align: justify;
+}
+
 
 /*-----------------------------------------
 6. ESTILOS PARA "#menu-navegacion"
 ------------------------------------------*/
+.container {
+  height: 7rem;
+}
+
+.container_contacto{
+  height: auto !important;
+  z-index: 0;
+  background-color: transparent;
+}
+
+.header_contacto{
+  z-index: 0;
+}
+
+.menu-navegacion_contacto{
+  z-index: 1;
+}
+
+.container_proyectos{
+  height: auto !important;
+  z-index: 0;
+  background-color: transparent;
+}
+
+.header_proyectos{
+  z-index: 0;
+}
+
+.menu-navegacion_proyecto{
+  z-index: 1;
+}
+
+
 /*Quitamos estilos al boton por defecto*/
 #menu-navegacion .navbar-toggler {
-  padding: 0;
+  padding-top: 0.8rem;
   font-size: 1rem;
   line-height: 1;
   background-color: transparent;
   border: none;
   border-radius: 0;
-  outline: 0; }
+  outline: 0;
+}
 
 /*Estilos boton del menu personalizado*/
 #menu-navegacion .boton-menu:before {
@@ -133,62 +220,120 @@ body {
   content: "\f0c9";
   font-weight: 900;
   color: #fff;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 #menu-navegacion .icono-cerrar:before {
   content: "\f00d";
   position: relative;
-  left: .2rem; }
+  left: .2rem;
+}
 
 /*Estilos de los enlace del #menu-navegacion*/
 .navbar-dark .navbar-nav .nav-link {
   padding: 1rem 1.5rem;
+  background-color: #35363c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-radius: .5rem;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+}
 
 .navbar-dark .navbar-nav .nav-link:after {
   font-family: 'Font Awesome 5 Free';
   content: "\f105";
   font-weight: 900;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+}
 
 /*Estilos estado hover de enlace*/
 .navbar-dark .navbar-nav .nav-link:hover {
-  background-color: #4d4e57; }
+  background-color: #4d4e57;
+}
 
 .navbar-dark .navbar-nav .nav-link:hover:after {
   -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg); }
+  transform: rotateZ(180deg);
+}
 
 /*Estilos para el enlace activo*/
 .navbar-dark .navbar-nav .nav-link.active {
-  background-color: #00ad75; }
+  background-color: #00ad75;
+}
+
+.navbar-dark .navbar-nav .inactive {
+  background-color: #35363c !important;
+}
 
 /*Clase cuando  la barra de navegación se fija a la parte superior*/
 .menu-fijo {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   background-color: #1d1e21 !important;
-  width: 100% !important; }
+  width: 100% !important;
+}
 
 /*-----------------------------------------
 7. ESTILOS PARA "#animacion"
 ------------------------------------------*/
+
+#animacion {
+  background-color: #ffffff !important;
+  height: 77.5%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.button_disable {
+  opacity: 0.65;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+.fade-in {
+  display: block;
+  animation: fadeIn ease-in 5s;
+  -webkit-animation: fadeIn ease-in 5s;
+  -moz-animation: fadeIn ease-in 5s;
+  -o-animation: fadeIn ease-in 5s;
+  -ms-animation: fadeIn ease-in 5s;
+  opacity: 1;
+  z-index: -9999;
+}
+
+.mySlides {
+  display: none;
+}
+
+.texto_descripcion {
+  margin-top: -10%;
+}
+
+.swiper-wrapper {
+  width: 10%;
+}
+
 .swiper-slide {
-  height: 34rem;
+  /*height: 34rem;*/
   /*450px*/
   text-align: center;
   color: #fff;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+}
 
 .swiper-slide::before {
   content: "";
@@ -198,7 +343,8 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: .4; }
+  opacity: .4;
+}
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -210,40 +356,47 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #fff;
   border-radius: 50%;
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 .swiper-button-prev::before,
 .swiper-button-next::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: "\f060"; }
+  content: "\f060";
+}
 
 .swiper-button-next::before {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  transform: rotate(180deg);
+}
 
 /*Estado Hover de los botones*/
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.46);
-  color: #00ad75; }
+  color: #00ad75;
+}
 
 /*Estilos para el paginador*/
+
 .swiper-pagination-bullet {
   width: 1rem;
   height: 1rem;
-  margin: 0 .4rem !important; }
+  margin: 0 .4rem !important;
+}
 
 .swiper-pagination-bullet-active {
-  background-color: #00ad75; }
+  background-color: #00ad75;
+}
 
 /*-----------------------------------------
 8. ESTILOS PARA "#bienvenidos"
@@ -259,34 +412,38 @@ body {
   color: #00ad75;
   font-size: 2rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-decoration: none;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-clip: padding-box;
   border: 0 solid transparent;
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 .contenedor-video a:hover {
   background-color: #00ad75;
   color: #fff;
-  border: 10px solid rgba(255, 255, 255, 0.5); }
+  border: 10px solid rgba(255, 255, 255, 0.5);
+}
 
 .contenedor-video img {
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 .contenedor-video:hover img {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2); }
+  transform: scale(1.2);
+}
 
 /*-----------------------------------------
 9. ESTILOS PARA "#te-ayudamos"
@@ -294,7 +451,8 @@ body {
 #te-ayudamos {
   position: relative;
   -webkit-transform: skew(0, 6deg);
-          transform: skew(0, 6deg); }
+  transform: skew(0, 6deg);
+}
 
 #te-ayudamos::before {
   content: "";
@@ -303,11 +461,13 @@ body {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+}
 
 #te-ayudamos .container {
   -webkit-transform: skew(0, -6deg);
-          transform: skew(0, -6deg); }
+  transform: skew(0, -6deg);
+}
 
 /*-----------------------------------------
 10. ESTILOS PARA "#premios"
@@ -320,15 +480,17 @@ body {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 #premios .col-6:hover .contador-linea {
   bottom: 1rem;
   -webkit-transform: translateX(-50%) rotate(180deg);
-          transform: translateX(-50%) rotate(180deg);
-  background-color: #35363c; }
+  transform: translateX(-50%) rotate(180deg);
+  background-color: #35363c;
+}
 
 /*-----------------------------------------
 15. ESTILOS PARA "#nuestra-app"
@@ -340,7 +502,8 @@ body {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+}
 
 /*-----------------------------------------
 16. ESTILOS PARA "#contacto"
@@ -353,59 +516,76 @@ body {
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
-          transform: translateX(-50%) translateY(50%) rotate(45deg); }
+  transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
 
 .input-group-cita {
   margin-bottom: 0;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 /*Personalizando el selector de fechas*/
 .picker__box {
-  border: 5px solid #00ad75; }
+  border: 5px solid #00ad75;
+}
 
 .picker--focused .picker__day--selected,
 .picker__day--selected,
 .picker__day--selected:hover {
   background: #00ad75;
-  color: #fff; }
+  color: #fff;
+}
 
 .picker__day--today:before {
-  border-top: .5em solid #ffffff; }
+  border-top: .5em solid #ffffff;
+}
 
 .picker__select--month,
 .picker__select--year {
   margin-top: -.5em;
   padding: 0 .5rem;
-  border-radius: .5rem; }
+  border-radius: .5rem;
+}
 
 /*personalizando el selector de hora*/
 .picker--focused .picker__list-item--selected,
 .picker__list-item--selected,
 .picker__list-item--selected:hover {
-  background: #00ad75; }
+  background: #00ad75;
+}
 
 .picker__list-item--highlighted,
 .picker__list-item:hover {
-  border-color: #007a53; }
+  border-color: #007a53;
+}
 
 .picker__list {
-  padding: .5rem 0; }
+  padding: .5rem 0;
+}
 
 .picker--time .picker__button--clear {
   color: #fff;
   background: #ff520d;
   border-radius: .5rem;
   -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+}
 
 .picker__button--clear:before {
   width: 0;
   border-top: 0px solid #e20;
-  display: none; }
+  display: none;
+}
 
 /*-----------------------------------------
 17. ESTILOS PARA "#pie-de-pagina"
 ------------------------------------------*/
+
+#pie-de-pagina {
+  position: absolute;
+  bottom: 0;
+}
+
 .columna-inclinada::before {
   content: "";
   position: absolute;
@@ -413,25 +593,30 @@ body {
   top: 0;
   bottom: 0;
   left: -100%;
-  right: -100%; }
+  right: -100%;
+}
 
 .enlaces-secundario {
   border-bottom: 1px solid #5d666f;
   -webkit-box-shadow: 0 1px #212529;
-          box-shadow: 0 1px #212529; }
+  box-shadow: 0 1px #212529;
+}
 
 .enlaces-secundario a {
   padding: 1rem;
   color: white;
   text-decoration: none;
-  display: block; }
+  display: block;
+}
 
 /*Estilos para IE11*/
 .ie11 #bienvenidos .contenedor-video img {
-  width: 100%; }
+  width: 100%;
+}
 
 .ie11 .navbar-dark .navbar-nav .nav-link::after {
-  display: block; }
+  display: block;
+}
 
 /*---------------------------------------------------
 X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
@@ -439,34 +624,178 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 @media (min-width: 768px) {
   .navbar-dark .navbar-nav .nav-link {
     padding: .7rem 1.2rem;
-    border-radius: 1.5rem; }
+    border-radius: 1.5rem;
+  }
 
   .navbar-dark .navbar-nav .nav-link:after {
-    content: ""; }
+    content: "";
+  }
 
   #te-ayudamos {
     -webkit-transform: skew(0, 3deg);
-            transform: skew(0, 3deg); }
+    transform: skew(0, 3deg);
+  }
 
   #te-ayudamos .container {
     -webkit-transform: skew(0, -3deg);
-            transform: skew(0, -3deg); }
+    transform: skew(0, -3deg);
+  }
 
   .columna-inclinada::before {
     left: -300%;
     right: 0;
     -webkit-transform: skewX(20deg);
-            transform: skewX(20deg); } }
+    transform: skewX(20deg);
+  }
+}
+
 @media (min-width: 990px) {
   html {
-    font-size: 16px; }
+    font-size: 16px;
+  }
 
   .swiper-slide {
     height: 37.5rem;
-    /*600px*/ } }
+    /*600px*/
+  }
+}
+
 @media (min-width: 1200px) {
   .swiper-slide {
     height: 44rem;
-    /*700px*/ } }
+    /*700px*/
+  }
+}
+@media(min-width: 768px){
+  .size_lg{
+    height: 90% !important;
+  }
+}
 
-/*# sourceMappingURL=estilos.css.map */
+@media (max-width: 320px) {
+  .fuente_movil {
+    font-size: 15px;
+    font-family: Perpetua;
+  }
+}
+
+@media (max-width: 360px) {
+  .fuente_movil {
+    font-size: 20px;
+    font-family: Perpetua;
+  }
+}
+
+@media (max-width: 375px) {
+  .fuente_movil {
+    font-size: 25px;
+    font-family: Perpetua;
+  }
+
+  .swiper-pagination {
+    padding-bottom: 10%;
+  }
+}
+
+@media (max-width: 414px) {
+  .fuente_movil {
+    font-size: 35px;
+    font-family: Perpetua;
+  }
+
+  .swiper-pagination {
+    padding-bottom: 10%;
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.centrado{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#menu_vertical{
+  width: 20%;
+  float: left;
+  height: 100%;
+  z-index: 1;
+}
+
+@media(min-width: 768px){
+  .size_lg{
+    height: 90% !important;
+  }
+
+  .fade_menu_vertical{
+    float: left;
+  }
+  .barra_contacto_menu_vertical{
+    margin-left: 20%;
+    width: 80%;
+  }  
+  .animacion_menu_vertical{
+    width: 80% !important;
+  }
+  .display-4{
+    width: 60% !important;
+    padding-top: 10% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .swiper-slide {
+    height: 100%;
+  }
+}
+
+  /*# sourceMappingURL=estilos.css.map */

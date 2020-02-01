@@ -1,5 +1,47 @@
 $(function () {
 
+    /*----------------------------------------------------------
+        INIT
+    -----------------------------------------------------------*/
+        
+    $(document).ready(function() {
+        setInterval(button_disable, 5000);
+        setInterval(load, 500);
+
+        let fade = document.getElementById('fade');
+
+        fade.classList.toggle('hidden');
+        fade.classList.toggle('fade-in');
+
+        $('.link').click(function() {
+        
+        let fade = document.getElementById('fade')
+        
+        event.preventDefault();
+        
+        newLocation = this.href;
+
+        $('#fade').fadeOut(2000, newpage);
+        
+        });
+        
+        function newpage() {
+        
+        window.location = newLocation;
+        
+        }
+
+        function button_disable(){
+            document.getElementById('ButtonMenu').style.opacity = "1";
+            document.getElementById('ButtonMenu').style.cursor = "allowed";
+            document.getElementById('ButtonMenu').style.pointerEvents = "all";
+        }
+
+        function load(){
+            document.getElementById('principal').style.opacity = "1";
+        }
+        
+        });
 
     /*-----------------------------------------------------------
     1. FUNCIONES PARA EL MENU PRINCIPAL
@@ -41,9 +83,9 @@ $(function () {
         effect: 'fade',
         grabCursor: true,
         loop: true,
-        //   autoplay: {
-        //     delay: 10000,            
-        //   },
+           autoplay: {
+             delay: 5000,            
+       },
         keyboard: {
             enabled: true,
             onlyInViewport: true,
