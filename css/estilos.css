@@ -5,7 +5,7 @@
 -----------------------------------------*/
 html {
   font-size: 13px;
-  background-color: #35363c;
+  background-color: #c3c3c3;
 }
 
 #principal {
@@ -23,7 +23,7 @@ body {
 -------------------------------------------*/
 .btn {
   border-radius: 2rem;
-  padding: .6rem 2rem;
+  padding: .1rem 1rem;
   font-weight: bold;
 }
 
@@ -31,39 +31,41 @@ body {
 3. ESTILOS COLOR PRINCIPAL
 ------------------------------------------*/
 .bg-primary {
-  background-color: #00ad75 !important;
+  background-image: url(../images/background-textil.jpg) !important;
+  background-repeat: repeat;
 }
 
 .text-primary {
-  color: #00ad75 !important;
+  color: #c3c3c3 !important;
 }
 
 /*Estilos btn-primary*/
 .btn-primary {
   color: #fff;
-  background-color: #00ad75;
-  border-color: #00ad75;
+  background-color: #000000;
+  border-color: #000000;
   position: relative;
   overflow: hidden;
   z-index: 1;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  opacity: 0.8;
 }
 
 .btn-primary:hover {
-  color: #35363c;
+  color: #c3c3c3;
   background-color: #fff;
-  border-color: #00ad75;
+  border-color: #c3c3c3;
 }
 
 .btn-primary:active {
-  color: #35363c !important;
+  color: #c3c3c3 !important;
   background-color: #00c786 !important;
   border-color: #00e097 !important;
 }
 
 .btn-primary:focus {
-  color: #35363c !important;
+  color: #c3c3c3 !important;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(0, 173, 117, 0.5) !important;
 }
@@ -113,18 +115,19 @@ body {
 4. ESTILOS COLOR SECUNDARIO
 ------------------------------------------*/
 .bg-secondary {
-  background-color: #35363c !important;
+  background-image: url(../images/background-textil.jpg) !important;
+  background-repeat: repeat;
 }
 
 .text-secondary {
-  color: #35363c !important;
+  color: #c3c3c3 !important;
 }
 
 /*-----------------------------------------
 5. ESTILOS PARA ".redes-sociales"
 ------------------------------------------*/
 .redes-sociales li a i {
-  color: #fff;
+  color: #696969;
   font-size: 1.5rem;
   padding: .6rem 1rem;
   opacity: .8;
@@ -144,7 +147,7 @@ body {
   right: 0rem;
   bottom: 0rem;
   height: 10%;
-  z-index: 0;
+  z-index: 1;
 }
 
 #barra-contacto_bienvenido {
@@ -155,13 +158,13 @@ body {
   height: 10%;
 }
 
-.comment_servicios{
+.comment_servicios {
   margin: 2rem 0.25rem;
   width: 100%;
   background-color: whitesmoke;
 }
 
-.comment{
+.comment {
   padding: 1.5rem 2rem;
   text-align: justify;
 }
@@ -174,38 +177,49 @@ body {
   height: 7rem;
 }
 
-.container_contacto{
-  height: auto !important;
+.container_contacto {
+  height: 100% !important;
   z-index: 0;
   background-color: transparent;
+  padding-bottom: 5%;
 }
 
-.header_contacto{
+.header_contacto {
+  background-image: url(../images/background_textil_2.jpg) !important;
+  background-repeat: repeat;
   z-index: 0;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
-.menu-navegacion_contacto{
+.detalle-rectangulo {
+  background-image: url(../images/background_textil_2_adorno.png) !important;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.menu-navegacion_contacto {
   z-index: 1;
 }
 
-.container_proyectos{
+.container_proyectos {
   height: auto !important;
   z-index: 0;
   background-color: transparent;
 }
 
-.header_proyectos{
+.header_proyectos {
   z-index: 0;
 }
 
-.menu-navegacion_proyecto{
+.menu-navegacion_proyecto {
   z-index: 1;
 }
 
 
 /*Quitamos estilos al boton por defecto*/
 #menu-navegacion .navbar-toggler {
-  padding-top: 0.8rem;
+  margin-top: 1.7rem;
   font-size: 1rem;
   line-height: 1;
   background-color: transparent;
@@ -219,7 +233,7 @@ body {
   font-family: 'Font Awesome 5 Free';
   content: "\f0c9";
   font-weight: 900;
-  color: #fff;
+  color: #696969;
   font-size: 2rem;
 }
 
@@ -232,7 +246,7 @@ body {
 /*Estilos de los enlace del #menu-navegacion*/
 .navbar-dark .navbar-nav .nav-link {
   padding: 1rem 1.5rem;
-  background-color: #35363c;
+  background-color: #c3c3c3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,18 +278,19 @@ body {
 
 /*Estilos para el enlace activo*/
 .navbar-dark .navbar-nav .nav-link.active {
-  background-color: #00ad75;
+  background-color: #696969;
 }
 
 .navbar-dark .navbar-nav .inactive {
-  background-color: #35363c !important;
+  background-color: #c3c3c3 !important;
+  color: #696969 !important;
 }
 
 /*Clase cuando  la barra de navegación se fija a la parte superior*/
 .menu-fijo {
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  background-color: #1d1e21 !important;
+  background-color: #c3c3c3 !important;
   width: 100% !important;
 }
 
@@ -383,7 +398,7 @@ body {
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background-color: rgba(0, 0, 0, 0.46);
-  color: #00ad75;
+  color: #c3c3c3;
 }
 
 /*Estilos para el paginador*/
@@ -395,7 +410,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #00ad75;
+  background-color: #c3c3c3;
 }
 
 /*-----------------------------------------
@@ -409,7 +424,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
-  color: #00ad75;
+  color: #c3c3c3;
   font-size: 2rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -430,7 +445,7 @@ body {
 }
 
 .contenedor-video a:hover {
-  background-color: #00ad75;
+  background-color: #c3c3c3;
   color: #fff;
   border: 10px solid rgba(255, 255, 255, 0.5);
 }
@@ -473,7 +488,7 @@ body {
 10. ESTILOS PARA "#premios"
 ------------------------------------------*/
 .contador-linea {
-  background-color: #00ad75;
+  background-color: #c3c3c3;
   width: 4rem;
   height: .4rem;
   position: absolute;
@@ -489,7 +504,7 @@ body {
   bottom: 1rem;
   -webkit-transform: translateX(-50%) rotate(180deg);
   transform: translateX(-50%) rotate(180deg);
-  background-color: #35363c;
+  background-color: #c3c3c3;
 }
 
 /*-----------------------------------------
@@ -512,7 +527,7 @@ body {
   position: absolute;
   width: 2.5rem;
   height: 2.5rem;
-  background: #00ad75;
+  background: #c3c3c3;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%) translateY(50%) rotate(45deg);
@@ -526,13 +541,13 @@ body {
 
 /*Personalizando el selector de fechas*/
 .picker__box {
-  border: 5px solid #00ad75;
+  border: 5px solid #c3c3c3;
 }
 
 .picker--focused .picker__day--selected,
 .picker__day--selected,
 .picker__day--selected:hover {
-  background: #00ad75;
+  background: #c3c3c3;
   color: #fff;
 }
 
@@ -551,7 +566,7 @@ body {
 .picker--focused .picker__list-item--selected,
 .picker__list-item--selected,
 .picker__list-item--selected:hover {
-  background: #00ad75;
+  background: #c3c3c3;
 }
 
 .picker__list-item--highlighted,
@@ -589,7 +604,7 @@ body {
 .columna-inclinada::before {
   content: "";
   position: absolute;
-  background: #00ad75;
+  background: #c3c3c3;
   top: 0;
   bottom: 0;
   left: -100%;
@@ -666,8 +681,9 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
     /*700px*/
   }
 }
-@media(min-width: 768px){
-  .size_lg{
+
+@media(min-width: 768px) {
+  .size_lg {
     height: 90% !important;
   }
 }
@@ -677,12 +693,32 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
     font-size: 15px;
     font-family: Perpetua;
   }
+
+  .pie_pagina_contacto_movil {
+    position: relative !important;
+  }
+  .pie_pagina_contacto_movil_proyectos {
+    position: relative !important;
+  }
+  .pie_heigth{
+    height: 15% !important;
+  }
 }
 
 @media (max-width: 360px) {
   .fuente_movil {
     font-size: 20px;
     font-family: Perpetua;
+  }
+
+  .pie_pagina_contacto_movil {
+    position: relative !important;
+  }
+  .pie_pagina_contacto_movil_proyectos {
+    position: relative !important;
+  }
+  .pie_heigth{
+    height: 15% !important;
   }
 }
 
@@ -695,6 +731,16 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   .swiper-pagination {
     padding-bottom: 10%;
   }
+
+  .pie_pagina_contacto_movil {
+    position: relative !important;
+  }
+  .pie_pagina_contacto_movil_proyectos {
+    position: relative !important;
+  }
+  .pie_heigth{
+    height: 15% !important;
+  }
 }
 
 @media (max-width: 414px) {
@@ -705,6 +751,16 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 
   .swiper-pagination {
     padding-bottom: 10%;
+  }
+
+  .pie_pagina_contacto_movil {
+    position: relative !important;
+  }
+  .pie_pagina_contacto_movil_proyectos {
+    position: relative !important;
+  }
+  .pie_heigth{
+    height: 15% !important;
   }
 }
 
@@ -759,43 +815,247 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   }
 }
 
-.centrado{
+.centrado {
   margin-left: auto;
-    margin-right: auto;
-    display: block;
+  margin-right: auto;
+  display: block;
 }
 
-#menu_vertical{
+#menu_vertical {
   width: 20%;
   float: left;
   height: 100%;
   z-index: 1;
 }
 
-@media(min-width: 768px){
-  .size_lg{
+@media(min-width: 1200px) {
+  .pie_pagina_contacto_movil {
+    position: fixed !important;
+  }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+    padding-top: 1.5rem;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 15% !important;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(../images/background-textil.jpg);
+    background-repeat: repeat;
+  }
+
+  .barra_contacto_menu_vertical {
+    margin-left: 15% !important;
+    width: 85% !important;
+  }
+
+  .animacion_menu_vertical {
+    width: 85% !important;
+    margin-left: 15% !important;
+  }
+
+  .logo {
+    margin-top: 15%;
+    width: 65%;
+    border: solid;
+    border-radius: .5rem;
+  }
+
+  .menu_vertical {
+    margin-top: 2.5rem;
+  }
+
+  .contacto_menu_vertical {
+    width: 85% !important;
+    margin-left: 15% !important;
+    float: left !important;
+    background-color: white;
+  }
+
+  .barra_contacto_menu_vertical_proyectos {
+    z-index: -1 !important;
+  }
+
+  .pie_pagina_contacto_movil_proyectos {
+    position: relative !important;
+  }
+}
+
+@media(min-width: 768px) {
+  .pie_pagina_contacto_movil_proyectos {
+    position: relative !important;
+  }
+
+  .barra_contacto_menu_vertical_proyectos {
+    z-index: -1 !important;
+  }
+
+  .pie_pagina_contacto_movil {
+    position: fixed !important;
+  }
+
+  .contacto_menu_vertical {
+    width: 85%;
+    float: left;
+    margin-left: 11.5rem;
+    background-color: white;
+    height: 90%;
+  }
+
+  .menu_vertical {
+    margin-top: 2.5rem;
+  }
+
+  .logo {
+    margin-top: 15%;
+    width: 65%;
+    border: solid;
+  }
+
+  .size_lg {
     height: 90% !important;
   }
 
-  .fade_menu_vertical{
+  .fade_menu_vertical {
     float: left;
   }
-  .barra_contacto_menu_vertical{
-    margin-left: 20%;
-    width: 80%;
-  }  
-  .animacion_menu_vertical{
-    width: 80% !important;
+
+  .barra_contacto_menu_vertical {
+    margin-left: 11.5rem;
+    width: 85%;
   }
-  .display-4{
+
+  .animacion_menu_vertical {
+    width: 85% !important;
+    margin-left: 11.5rem;
+  }
+
+  .display-4 {
     width: 60% !important;
     padding-top: 10% !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
   .swiper-slide {
     height: 100%;
   }
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+    padding-top: 1.5rem;
+  }
+
+  .sidenav {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 100%;
+    width: 11.5rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(../images/background-textil.jpg);
+    background-repeat: repeat;
+    padding-top: 20px;
+  }
+
+  .logo {
+    margin-top: 15%;
+    width: 65%;
+    border: solid;
+    border-radius: .5rem;
+  }
 }
 
-  /*# sourceMappingURL=estilos.css.map */
+.sidenav .bordes_menu {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  display: block;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.redes-sociales-menu-vertical li a i {
+  color: #696969;
+  font-size: 1.5rem;
+  padding: .6rem .5rem !important;
+  opacity: .8;
+  margin-top: 3rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.pie-pagina_menu_vertical {
+  padding-top: 0.7rem !important;
+  background-image: url(../images/background-textil.jpg) !important;
+  background-repeat: repeat;
+  width: 130%;
+  margin-left: -15%;
+}
+
+.pie-pagina_menu_vertical ul li a {
+  color: #696969;
+}
+
+.copyright {
+  color: #696969;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo_movil {
+  width: 6rem;
+  margin-left: 30%;
+  border: solid;
+  border-radius: .5rem;
+}
+
+.logo_movil_div {
+  width: 100%;
+  z-index: 1;
+}
+
+.title_page {
+  font-size: 1.5rem;
+}
+
+.border-bottom_menu-vertical {
+  border-bottom: 1px solid #dee2e6 !important;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centrado_detalles_contacto {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centrado_contacto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*# sourceMappingURL=estilos.css.map */

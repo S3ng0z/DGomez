@@ -47,11 +47,13 @@
 
     <nav id="menu-navegacion" class="d-block d-md-none navbar navbar-dark bg-secondary navbar-expand-md">
         <div class="container">
-            <button type="button" id="ButtonMenu" class="navbar-toggler button_disable" data-toggle="collapse"
-                data-target="#menu-principal" aria-expanded="false" aria-label="Botón Menú principal">
-                <span class="boton-menu"></span>
-            </button>
-
+            <div class="logo_movil_div">
+                <button type="button" id="ButtonMenu" class="navbar-toggler button_disable" data-toggle="collapse"
+                    data-target="#menu-principal" aria-expanded="false" aria-label="Botón Menú principal">
+                    <span class="boton-menu"></span>
+                </button>
+                <img class="logo_movil" src="images/D_Gomez.png" />
+            </div>
             <div class="collapse navbar-collapse" id="menu-principal">
                 <ul class="navbar-nav mt-3 mt-md-0">
                     <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="index.html"
@@ -71,7 +73,22 @@
 
     <div id="menu_vertical" class="d-none d-md-block">
         <div class="menu_fijo">
-            hola Mundo
+            <section class="sidenav">
+                <img class="logo" src="images/D_Gomez.png" />
+                <div class="menu_vertical">
+                    <a class="bordes_menu" href="index.html">Home</a>
+                    <a class="bordes_menu" href="bienvenidos.html">Nosotros</a>
+                    <a class="bordes_menu" href="servicios.html">Servicios</a>
+                    <a class="bordes_menu" href="proyectos.html">Proyectos</a>
+                    <a class="bordes_menu" href="contacto.html">Contactos</a>
+                </div>
+                <ul class="redes-sociales redes-sociales-menu-vertical list-unstyled d-inline-flex mb-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </section>
         </div>
     </div>
 
@@ -104,7 +121,7 @@
                                 <h2 class="fuente_movil display-4 font-weight-bold">
                                     Reservar una cita ahora es muy facil.
                                 </h2>
-                                <a href="#" class="btn btn-primary">Reservar una cita</a>
+                                <a href="#" class="btn btn-primary">+ info</a>
                             </div>
                         </div>
                     </div>
@@ -161,22 +178,35 @@
             <!-- Botones de paginación -->
             <div class="swiper-pagination"></div>
         </section>
-        <!-- Seccion #barra-contacto -->
-        <section id="barra-contacto" class="barra_contacto_menu_vertical bg-primary text-white py-3 py-lg-1 text-center">
-            <div class="container">
-                <div class="row justify-content-sm-between align-items-sm-center">
-                    <div class="centrado col-sm-auto">
-                        <ul class="redes-sociales list-unstyled d-inline-flex mb-0">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
+    </div>
+    <!-- Seccion #barra-contacto -->
+    <section id="barra-contacto" class="barra_contacto_menu_vertical bg-primary text-white py-3 py-lg-1 text-center">
+        <div class="container">
+            <div class="row justify-content-sm-between align-items-sm-center">
+                <div class="centrado col-sm-auto">
+                    <ul class="redes-sociales d-block d-md-none list-unstyled d-inline-flex mb-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </div>
+            <div
+                class="pie-pagina_menu_vertical row d-none d-md-block justify-content-sm-between align-items-sm-center">
+                <div class="col-12 col-sm-auto">
+                    <ul class="list-unstyled d-inline-flex mb-0">
+                        <li><a href="#">INICIO | </a></li>
+                        <li><a href="#">&nbsp;NOSOTROS | </a></li>
+                        <li><a href="#">&nbsp;POLITICAS DE PROVACIDAD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-none d-md-block copyright" style="margin-top: 0.5rem;">
+                &copy;2020. Todos los derechos reservados.
+            </div>
+        </div>
+    </section>
     <!-- Carga de "Jquery" -->
     <script src="js/jquery-3.3.1.min.js"></script>
 
