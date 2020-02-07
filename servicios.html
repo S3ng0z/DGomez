@@ -22,6 +22,9 @@
     <!-- Carga del CSS de "Jarallax" -->
     <link rel="stylesheet" href="css/jarallax.css">
 
+    <!-- Carga del CSS de "Lightbox" -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+
     <!-- Carga del CSS de "Pickadate.js" -->
     <link rel="stylesheet" href="js/pickadate.js/themes/default.css">
 
@@ -42,66 +45,70 @@
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/thumbnail-gallery.css">
-
+    <link rel="stylesheet" href="css/imagehover.min.css">
 </head>
 
 <body id="principal">
-    <!-- Sección #detalles-encabezado -->
-    <section id="detalles-encabezado" class="d-none d-md-block py-3">
-        <div class="container">
-            <div class="row justify-content-md-between align-items-md-center">
-                <div class="col-auto">
-                    <a href="#" class="logo">
-                        <img src="images/logo.svg" alt="Logo del sitio" width="200" class="img-fluid">
-                    </a>
-                </div>
-
-                <div class="col-auto ml-md-auto">
-                    <i class="fas fa-phone fa-flip-horizontal fa-2x align-middle text-primary"></i>
-                    <span class="font-weight-bold h5 ml-2"> +511-917 338 6831</span>
-                </div>
-                <div class="col-auto">
-                    <i class="fas fa-envelope fa-2x align-middle text-primary"></i>
-                    <span class="font-weight-bold h5 ml-2">info@aulaideal.com</span>
-                </div>
-            </div>
-        </div>
-
-    </section>
 
     <!-- Sección #menu-navegacion -->
 
-    <nav id="menu-navegacion" class="menu-navegacion_contacto navbar navbar-dark bg-secondary navbar-expand-md">
+    <nav id="menu-navegacion"
+        class="d-block d-md-none menu-navegacion_contacto navbar_fijo navbar navbar-dark bg-secondary navbar-expand-md">
         <div class="container">
-            <button type="button" id="ButtonMenu" class="navbar-toggler button_disable" data-toggle="collapse"
-                data-target="#menu-principal" aria-expanded="false" aria-label="Botón Menú principal">
-                <span class="boton-menu"></span>
-            </button>
+            <div class="logo_movil_div">
+                <button type="button" id="ButtonMenu" class="navbar-toggler button_disable" data-toggle="collapse"
+                    data-target="#menu-principal" aria-expanded="false" aria-label="Botón Menú principal">
+                    <span class="boton-menu"></span>
+                </button>
+                <img class="logo_movil" src="images/D_Gomez.png" />
+            </div>
 
             <div class="collapse navbar-collapse" id="menu-principal">
                 <ul class="navbar-nav mt-3 mt-md-0">
-                    <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="index.html"
-                            class="nav-link  inactive link">Inicio</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="index.html" class="nav-link inactive">Inicio</a>
+                    </li>
                     <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="bienvenidos.html"
-                            class="nav-link inactive link">Nosotros</a></li>
+                            class="nav-link inactive">Nosotros</a></li>
                     <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="servicios.html"
-                            class="nav-link active link">Servicios</a></li>
+                            class="nav-link inactive">Servicios</a>
+                    </li>
                     <li class="nav-item mb-1 mb-md-0 mr-md-2"><a href="proyectos.html"
-                            class="nav-link inactive link">Proyectos</a></li>
+                            class="nav-link active">Proyectos</a></li>
                     <li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="contacto.html"
-                            class="nav-link inactive link">Contacto</a></li>
+                            class="nav-link inactive">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <div id="menu_vertical" class="d-none d-md-block">
+        <div class="menu_fijo">
+            <section class="sidenav">
+                <img class="logo" src="images/D_Gomez.png" />
+                <div class="menu_vertical">
+                    <a class="bordes_menu border-bottom_menu-vertical" href="index.html">Home</a>
+                    <a class="bordes_menu border-bottom_menu-vertical" href="bienvenidos.html">Nosotros</a>
+                    <a class="bordes_menu border-bottom_menu-vertical" href="servicios.html">Servicios</a>
+                    <a class="bordes_menu border-bottom_menu-vertical" href="proyectos.html">Proyectos</a>
+                    <a class="bordes_menu border-bottom_menu-vertical" href="contacto.html">Contactos</a>
+                </div>
+                <ul class="redes-sociales redes-sociales-menu-vertical list-unstyled d-inline-flex mb-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
     <div id="fade">
         <!-- Sección #contacto -->
-        <div/div id="contacto">
-            <header class="header_contacto py-5 bg-primary text-white text-center position-relative">
-                <h2 class="display-4 font-weight-bold">SERVICIOS</h2>
-                <h6 class="text-white-50">LO QUE PODEMOS OFRECERTE</h6>
-                <div class="detalle-rectangulo"></div>
+        <section id="contacto" class="contacto_menu_vertical">
+            <header class="header_contacto py-3 bg-primary text-white text-center position-relative">
+                <h5 class="display-1 title_page font-weight-bold">SERVICIOS</h5>
+                <h6 class="text-white">¿QUÉ NECESITAS?</h6>
             </header>
             <div class="container container_proyectos gallery-container">
                 <div class="comment_servicios">
@@ -118,85 +125,56 @@
                     </div>
                 </div>
                 <div class="tz-gallery">
-
-                    <div class="row">
+                    <div class="row row_centrado_servicios">
 
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <a class="lightbox_project" data-lightbox="gallery_projects_puertas"
-                                    data-title="Puertas" href="../images/proyectos/park.jpg">
-                                    <img src="../images/proyectos/park.jpg" alt="Park">
-                                </a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_puertas"
-                                    href="../images/proyectos/bridge.jpg"></a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_puertas"
-                                    href="../images/proyectos/tunnel.jpg"></a>
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
+                                    <figure class="imghvr-shutter-out-diag-1"><img src="../images/proyectos/park.jpg" alt="Park">
+                                        <figcaption style="background-image: url(../images/proyectos/park.jpg );">
+                                          <div style="position: fixed; background-color: #c3c3c3; opacity: 0.5; margin-top: -1.8rem; margin-left: -1.8rem; width: 135%; height: 155% !important;">
+                                            
+                                          </div>
+                                          <h3>Hello World</h3>
+                                            <p>Life is too important to be taken seriously!</p>
+                                        </figcaption><a href="#"></a>
+                                      </figure>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <a class="lightbox_project" data-lightbox="gallery_projects_armarios"
-                                    href="../images/proyectos/coast.jpg">
+                                <a class="lightbox_project" href="">
                                     <img src="../images/proyectos/coast.jpg" alt="Coast">
                                 </a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_armarios"
-                                    href="../images/proyectos/rails.jpg"></a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_armarios"
-                                    href="../images/proyectos/traffic.jpg"></a>
-
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <a class="lightbox_project" data-lightbox="gallery_projects_puertas"
-                                    data-title="Puertas" href="../images/proyectos/park.jpg">
+                                <a class="lightbox_project" href="">
                                     <img src="../images/proyectos/park.jpg" alt="Park">
                                 </a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_puertas"
-                                    href="../images/proyectos/bridge.jpg"></a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_puertas"
-                                    href="../images/proyectos/tunnel.jpg"></a>
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail">
-                                <a class="lightbox_project" data-lightbox="gallery_projects_armarios"
-                                    href="../images/proyectos/coast.jpg">
+                                <a class="lightbox_project" href="">
                                     <img src="../images/proyectos/coast.jpg" alt="Coast">
                                 </a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_armarios"
-                                    href="../images/proyectos/rails.jpg"></a>
-                                <a class="lightbox_project" data-lightbox="gallery_projects_armarios"
-                                    href="../images/proyectos/traffic.jpg"></a>
-
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <a class="lightbox_project" href="">
+                                    <img src="../images/proyectos/park.jpg" alt="Park">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="comment_servicios">
+                <div class="comment_servicios_bottom">
                     <div class="comment">
                         <h5>TRABAJO DE EBANISTERÍA & DECORACIÓN</h5>
-                        Trabajo como Ebanista desde hace más de 25 años. Realizo todo tipo de trabajos de alta calidad
+                        Trabajo como Ebanista desde hace más de 25 años. Realizo todo tipo de trabajos de alta
+                        calidad
                         en
                         madera. Todo tipo de muebles con tallas y detalles, desde muebles exclusivos y armarios o
                         vestidores
@@ -206,89 +184,95 @@
                         un mueble de calidad para toda la vida, único y a tu gusto, llámame y lo haremos realidad.
                     </div>
                 </div>
+                <br />
             </div>
-            </section>
-            <!-- Seccion #barra-contacto -->
-            <section id="barra-contacto_bienvenido" class="bg-primary text-white py-3 py-lg-1 text-center">
-                <div class="container">
-                    <div class="row justify-content-sm-between align-items-sm-center">
-                        <div class="col-12 col-sm-auto">
-                            <ul class="redes-sociales list-unstyled d-inline-flex mb-0">
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row justify-content-sm-between align-items-sm-center">
-                        <div class="col-12 col-sm-auto">
-                            <ul class="list-unstyled d-inline-flex mb-0">
-                                <li><a href="#">INICIO | </a></li>
-                                <li><a href="#">&nbsp;NOSOTROS | </a></li>
-                                <li><a href="#">&nbsp;POLITICAS DE PROVACIDAD</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div style="margin-top: 0.5rem;">
-                        &copy;2020. Todos los derechos reservados.
-                    </div>
+        </section>
+    </div>
+
+    <!-- Seccion #barra-contacto -->
+    <section id="barra-contacto"
+        class="barra_contacto_menu_vertical pie_pagina_contacto_movil  bg-primary text-white py-3 py-lg-1 text-center">
+        <div class="container">
+            <div class="row justify-content-sm-between align-items-sm-center">
+                <div class="centrado col-sm-auto">
+                    <ul class="redes-sociales d-block d-md-none list-unstyled d-inline-flex mb-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+            <div
+                class="pie-pagina_menu_vertical pie-pagina_menu_vertical_movil row d-md-block justify-content-sm-between align-items-sm-center">
+                <div class="col-12 col-sm-auto">
+                    <ul class="list-unstyled d-inline-flex mb-0">
+                        <li><a href="#">INICIO | </a></li>
+                        <li><a href="#">&nbsp;NOSOTROS | </a></li>
+                        <li><a href="#">&nbsp;POLITICAS DE PROVACIDAD</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-md-block copyright" style="margin-top: 0.5rem;">
+                &copy;2020. Todos los derechos reservados.
+            </div>
         </div>
+    </section>
 
-        <!-- Carga de "Jquery" -->
-        <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Carga de "Jquery" -->
+    <script src="js/jquery-3.3.1.min.js"></script>
 
-        <!-- Carga de "Popper" -->
-        <script src="js/popper.min.js"></script>
+    <!-- Carga de "Popper" -->
+    <script src="js/popper.min.js"></script>
 
-        <!-- Carga de "Bootstrap" -->
-        <script src="js/bootstrap.min.js"></script>
+    <!-- Carga de "Bootstrap" -->
+    <script src="js/bootstrap.min.js"></script>
 
-        <!-- Carga de "Swiper" -->
-        <script src="js/swiper.min.js"></script>
+    <!-- Carga de "Swiper" -->
+    <script src="js/swiper.min.js"></script>
 
-        <!-- Carga de "VenoBox" -->
-        <script src="js/venobox.min.js"></script>
+    <!-- Carga de "VenoBox" -->
+    <script src="js/venobox.min.js"></script>
 
-        <!-- Carga de "Jarallax" -->
-        <script src="js/jarallax.min.js"></script>
+    <!-- Carga de "Jarallax" -->
+    <script src="js/jarallax.min.js"></script>
 
-        <!-- Carga de "PictureFill" -->
-        <script src="js/picturefill.min.js"></script>
+    <!-- Carga de "PictureFill" -->
+    <script src="js/picturefill.min.js"></script>
 
-        <!-- Carga de "Waypoints" -->
-        <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Carga de "Waypoints" -->
+    <script src="js/jquery.waypoints.min.js"></script>
 
-        <!-- Carga de "jquery.counterup" -->
-        <script src="js/jquery.counterup.min.js"></script>
+    <!-- Carga de "jquery.counterup" -->
+    <script src="js/jquery.counterup.min.js"></script>
 
-        <!-- Carga de "Picker.js" | Crea el selector de fecha y de hora-->
-        <script src="js/pickadate.js/picker.js"></script>
+    <!-- Carga de "Picker.js" | Crea el selector de fecha y de hora-->
+    <script src="js/pickadate.js/picker.js"></script>
 
-        <!-- Carga de "picker.date.js" | Crea el selector de fecha-->
-        <script src="js/pickadate.js/picker.date.js"></script>
+    <!-- Carga de "picker.date.js" | Crea el selector de fecha-->
+    <script src="js/pickadate.js/picker.date.js"></script>
 
-        <!-- Carga de "picker.time.js" | Crea el selector de fecha-->
-        <script src="js/pickadate.js/picker.time.js"></script>
+    <!-- Carga de "picker.time.js" | Crea el selector de fecha-->
+    <script src="js/pickadate.js/picker.time.js"></script>
 
-        <!-- Carga de "parsley.js" | Crea la validación de formularios-->
-        <script src="js/parsley.min.js"></script>
-        <script src="js/parsley.es.js"></script>
+    <!-- Carga de "parsley.js" | Crea la validación de formularios-->
+    <script src="js/parsley.min.js"></script>
+    <script src="js/parsley.es.js"></script>
 
-        <!-- Carga de "Jquery Stickit.js" | Crean un encabezado fijo en la parte superior de la página-->
-        <script src="js/jquery.stickit.min.js"></script>
+    <!-- Carga de "Jquery Stickit.js" | Crean un encabezado fijo en la parte superior de la página-->
+    <script src="js/jquery.stickit.min.js"></script>
 
 
-        <!-- Carga de "page-scroll-to-id" | Crean el efecto de scroll entre los enlaces-->
-        <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <!-- Carga de "page-scroll-to-id" | Crean el efecto de scroll entre los enlaces-->
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
 
-        <!-- Carga de "css_browser_selector" | Crean clases para identificar un disp.-->
-        <script src="js/css_browser_selector.js"></script>
+    <!-- Carga de "css_browser_selector" | Crean clases para identificar un disp.-->
+    <script src="js/css_browser_selector.js"></script>
 
-        <!-- Archivo para configurar e iniciar las funciones de los scripts -->
-        <script src="js/mis-scripts.js"></script>
+    <!-- Archivo para configurar e iniciar las funciones de los scripts -->
+    <script src="js/mis-scripts.js"></script>
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 
