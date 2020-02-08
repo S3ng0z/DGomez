@@ -1204,6 +1204,7 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 [class*=" imghvr-"],
 [class^=imghvr-] {
   background-color: #c3c3c3 !important;
+  border-radius: .5rem;
 }
 
 [class*=" imghvr-"],
@@ -1219,11 +1220,13 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 [class^=imghvr-]:before,
 [class^=imghvr-] :before {
   transition: all 1s ease !important;
+  border-radius: .5rem;
 }
 
 [class*=" imghvr-shutter-out-"]:before,
 [class^=imghvr-shutter-out-]:before {
   background-color: #c3c3c3 !important;
+  border-radius: .5rem;
 }
 
 [class*=" imghvr-"] figcaption,
@@ -1231,4 +1234,74 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   background-color: #c3c3c3 !important;
   background-repeat: no-repeat !important;
   background-size: 100% !important;
+  padding: 0rem !important;
+  border-radius: .5rem;
+}
+
+.services_thumbnail {
+  position: relative;
+  background-color: #c3c3c3;
+  opacity: 0.85;
+  width: 100%;
+  height: 100% !important;
+  color: #696969;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  padding: 15% !important;
+  border-radius: .5rem;
+}
+
+@media(max-width: 1100px) {
+
+  [class*=" imghvr-"] figcaption .services_thumbnail h1,
+  [class*=" imghvr-"] figcaption .services_thumbnail h2,
+  [class*=" imghvr-"] figcaption .services_thumbnail h3,
+  [class*=" imghvr-"] figcaption .services_thumbnail h4,
+  [class*=" imghvr-"] figcaption .services_thumbnail h5,
+  [class*=" imghvr-"] figcaption .services_thumbnail h6,
+  [class^=imghvr-] figcaption .services_thumbnail h1,
+  [class^=imghvr-] figcaption .services_thumbnail h2,
+  [class^=imghvr-] figcaption .services_thumbnail h3,
+  [class^=imghvr-] figcaption .services_thumbnail h4,
+  [class^=imghvr-] figcaption .services_thumbnail h5,
+  [class^=imghvr-] figcaption .services_thumbnail h6 {
+    color: #696969;
+    font-size: 2rem !important;
+  }
+}
+
+@media(min-width: 1150px) {
+
+  [class*=" imghvr-"] figcaption .services_thumbnail h1,
+  [class*=" imghvr-"] figcaption .services_thumbnail h2,
+  [class*=" imghvr-"] figcaption .services_thumbnail h3,
+  [class*=" imghvr-"] figcaption .services_thumbnail h4,
+  [class*=" imghvr-"] figcaption .services_thumbnail h5,
+  [class*=" imghvr-"] figcaption .services_thumbnail h6,
+  [class^=imghvr-] figcaption .services_thumbnail h1,
+  [class^=imghvr-] figcaption .services_thumbnail h2,
+  [class^=imghvr-] figcaption .services_thumbnail h3,
+  [class^=imghvr-] figcaption .services_thumbnail h4,
+  [class^=imghvr-] figcaption .services_thumbnail h5,
+  [class^=imghvr-] figcaption .services_thumbnail h6 {
+    color: #696969;
+    font-size: 3rem !important;
+  }
+
+  [class*=" imghvr-"] figcaption .services_thumbnail p,
+  [class^=imghvr-] figcaption .services_thumbnail p {
+    font-size: 1.5rem !important;
+  }
+}
+
+.nosotros {
+  max-width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  border-radius: .5rem;
 }
