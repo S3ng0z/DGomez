@@ -79,12 +79,12 @@ $(function () {
             type: 'bullets',
             clickable: true,
         },
-        speed: 500,
+        speed: 1000,
         effect: 'fade',
         grabCursor: true,
         loop: true,
            autoplay: {
-             delay: 5000,            
+             delay: 3000,            
        },
         keyboard: {
             enabled: true,

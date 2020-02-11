@@ -1018,7 +1018,7 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 }
 
 .title_page {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 .border-bottom_menu-vertical {
@@ -1071,13 +1071,22 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   height: 80% !important;
   z-index: 0;
   background-color: transparent;
-  padding-top: 5%;
-  padding-bottom: 15%;
+}
+
+.container_row_contacto{
+  background-color: white;
+  width:100% !important;
 }
 
 
 
 @media(min-width: 1200px) {
+  .pdding_left_extra{
+    padding-left: 5%;
+  }
+  .barra_lateral_contacto{
+    border-left: 5px solid #c3c3c3 !important;
+  }
   .menu_vertical_projects {
     position: fixed !important;
   }
@@ -1109,7 +1118,41 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   }
 }
 
+@media only screen and (min-width: 1200px){
+  .container_aux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1075px){
+  .container_aux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1075px) and (min-width: 768px){
+  .container_aux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+}
+
 @media(min-width: 768px) {
+
+  .pdding_left_extra{
+    padding-left: 5%;
+  }
+  .barra_lateral_contacto{
+    border-left: 5px solid #c3c3c3 !important;
+  }
   .menu_vertical_projects {
     position: fixed !important;
   }
@@ -1146,6 +1189,9 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   .header_contacto {
     padding-top: 30% !important;
   }
+  .header_contacto_basic{
+    padding-top: 1rem !important;
+  }
 
   .pie_pagina_contacto_movil {
     position: relative !important;
@@ -1155,6 +1201,9 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 @media (max-width: 360px) {
   .header_contacto {
     padding-top: 30% !important;
+  }
+  .header_contacto_basic{
+    padding-top: 1rem !important;
   }
 
   .pie_pagina_contacto_movil {
@@ -1166,6 +1215,9 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   .header_contacto {
     padding-top: 30% !important;
   }
+  .header_contacto_basic{
+    padding-top: 1rem !important;
+  }
 
   .pie_pagina_contacto_movil {
     position: relative !important;
@@ -1175,6 +1227,9 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
 @media (max-width: 414px) {
   .header_contacto {
     padding-top: 30% !important;
+  }
+  .header_contacto_basic{
+    padding-top: 1rem !important;
   }
 
   .pie_pagina_contacto_movil {
@@ -1305,3 +1360,57 @@ X .EMPEZAN EL SHOW DE LAS MEDIAS QUERIES
   margin-top: 1.5rem;
   border-radius: .5rem;
 }
+
+.text_texfield {
+  max-width: 20% !important
+}
+
+.submit_button {
+  width: 10rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.textfield_centrado {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #696969;
+  opacity: 0.5;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #696969;
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #696969;
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #696969;
+  opacity: 0.5;
+}
+
+:placeholder-shown {
+  /* Standard Pseudo-class */
+  color: #696969;
+  opacity: 0.5;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #c3c3c3;
+  color: #696969;
+  border-color: #696969;
+}
+

@@ -92,8 +92,9 @@ img {
 }
 
 @media (min-width: 435px) {
-    .lb-loader, .lightbox {
-        top: 15% !important;
+
+    .lightbox {
+        top: 0rem !important;
     }
 }
 
@@ -102,3 +103,4 @@ img {
         top: 35% !important;
     }
   }
+
