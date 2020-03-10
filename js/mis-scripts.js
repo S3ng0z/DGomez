@@ -79,8 +79,8 @@ $(function () {
             type: 'bullets',
             clickable: true,
         },
-        speed: 500,
-        effect: 'fade',
+        speed: 1000,
+        effect: 'Coverflow',
         grabCursor: true,
         loop: true,
            autoplay: {
